@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'QanelasRegular';
+    src: url(fonts/QanelasRegular.otf);
+}
+@font-face {
+    font-family: 'QanelasMedium';
+    src: url(fonts/QanelasMedium.otf);
+}
+@font-face {
+    font-family: 'QanelasBold';
+    src: url(fonts/QanelasBold.otf);
+}
+header{
+   
+    .logo{
+        font-family: 'Comfortaa', cursive;
+    }
+    vertical-align: center;
+    background-color: white;
+  
+    .form-select{
+        width: 70%;
+        color: #ffcc66;
+        align-items: center;
+        border: none;
+        margin: auto;
+        margin-top: 0.625em;
+    }
+    .temperature{
+        margin: auto;
+        margin-top: 0.625em;
+        text-align: center;
+        font-family:' QanelasMedium';
+        font-size: 12px;
+        font-weight: bold;
+        word-spacing: 0.2em;
+        span{
+            height: 18px;
+            font-size: 19px;
+        }
+    }
+    .col-3{
+        
+    
+        margin-top: 0.625em;
+    }
+    button{
+        background-color: #ffcc00;
+        color: white;
+        border:none;
+        font-family: 'QanelasBold';
+        font-size: 14px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .dropdown{
+        font-family: 'QanelasMedium';
+        font-size: 11px;
+        margin-top: 0.625em;
+        font-weight: 400;
+        .btn-secondary{
+            background-color: white;
+            border: none;
+            color: black;
+        }
+        .dropdown-toggle::after{
+            content: none;
+        }
+    }
+}
+.map{
+    margin-top: 10px;
+ 
+    iframe{
+        left:0;
+        top:0;
+        height: 600px;
+        width:100%;
+      
+        }
+    }
+
+.contacts{
+height: 200px;
+margin-top: 200px;
+background-color: #f6f8f9;
+margin-bottom: 100px;
+}
+.contacts{
+    display: flex;
+    .container{
+        margin: auto;
+
+        .row{
+            
+        }
+    }
+    font-size: 13px;
+    h3{
+        font-family: 'QanelasBold';
+        font-size: 13px;
+    }
+    
+}
+footer{
+    display: flex;
+    
+    form{
+        background-color: #e6edf1;
+        h2{
+            text-align: center;
+        }
+    }
+    button{
+        justify-content: center;
+    }
+    
+}

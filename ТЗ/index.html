@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+</head>
+  <body>
+      <header class="sticky-top">
+          <div class="container">
+                <div class="row">
+                    <div class="col-2 logo">
+                        <img src="img/logo.png" alt="none"> Тернопіль
+                    </div>
+                    <div class="col lang-select">
+                        
+                        <select class="form-select lang">
+                            <option selected> УКР</option>
+                            <option value="1">ENG</option>
+                        </select>
+                    </div>
+                    <div class="col-2 temperature">
+                        <img src="img/cloud.png" alt="none">  <span>+24</span> ХМАРНО
+                    </div>
+                
+                    <div class="col-3 offset-2">
+                        <button>ПЕРШИЙ РАЗ У ТЕРНОПОЛІ?</button>
+                        
+                    </div>
+                   
+
+                    <div class="dropdown col">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                            МЕНЮ
+                            <img src="img/menu.png" alt="none"> 
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <li><button class="dropdown-item" type="button">Action</button></li>
+                          <li><button class="dropdown-item" type="button">Another action</button></li>
+                          <li><button class="dropdown-item" type="button">Something else here</button></li>
+                        </ul>
+                      </div>
+
+                </div> 
+            </div>  
+      </header>
+      <section class="map">
+          
+          <div class="container-fluid">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10354.473369656427!2d25.597669!3d49.548355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473036ad4b82ce75%3A0xc484a447edb154e8!2z0KLQtdGA0L3QvtC_0ZbQu9GMLCDQotC10YDQvdC-0L_RltC70YzRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNDYwMDM!5e0!3m2!1suk!2sua!4v1630932112729!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        
+      </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 offset-2">
+                       <h3>Туристический информационный центр </h3>
+                        <ul>
+                            <li>город Тернополь, 69000 </li>
+                            <li>проспект соборный 151 </li>
+                            <li>mycitytic@gmail.com </li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <h3>Администрация </h3>
+                        <ul>
+                            
+                            <li>+380504242054 </li>
+                            <li>+380617097001 </li>
+    
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </section>
+         
+        <footer>
+            <div class="container">
+                
+                <form action="" onsubmit="return validate()">
+                    <h2>Напишите нам</h2>
+                    <div class="row">
+                        <div class="col-2 offset-3">
+                            <label for="userName">
+                                Ваше имя
+                            </label>
+                            <input type="text" id="userName">
+                        </div>
+                        <div class="col-2 offset-3">
+                            <label for="userTel">
+                                Ваш телефон
+                            </label>
+                            <input type="tel" id="userTel">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 offset-3">
+                          
+                    <label for="userEmail">
+                        Email
+                    </label>
+                    <input type="email" id="userEmail">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 offset-3">
+                            <label for="userMessage">
+                                Сообщение
+                            </label>
+                            <input type="text" id="userMessage">
+                        </div>
+                    </div>
+                    
+                   
+                    <button type="submit">send</button>
+            </div>
+
+            
+            </form>
+            <script>
+                function validate(){
+                    var userName = document.getElementById("userName");
+                    var userTel = document.getElementById("userTel");
+                    var userEmail = document.getElementById("userEmail");
+                    var userMessage = document.getElementById("userMessage");
+
+                    event.preventDefault();
+
+                    if(!userName.value) {
+                        userName.style.border = "2px solid red";
+                        return false;
+                    }
+                    if(!userTel.value) {
+                        userTel.style.border = "2px solid red";
+                        return false;
+                    }
+                    if(!userEmail.value) {
+                        userEmail.style.border = "2px solid red";
+                        return false;
+                    }
+                    
+                    if(!userMessage.value) {
+                        userMessage.style.border = "2px solid red";
+                        return false;
+                    }
+                    return true;
+
+                }
+            </script>
+        </footer>
+        
+  </body>
+</html>

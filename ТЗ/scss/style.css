@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'QanelasRegular';
+  src: url(fonts/QanelasRegular.otf);
+}
+
+@font-face {
+  font-family: 'QanelasMedium';
+  src: url(fonts/QanelasMedium.otf);
+}
+
+@font-face {
+  font-family: 'QanelasBold';
+  src: url(fonts/QanelasBold.otf);
+}
+
+header {
+  vertical-align: center;
+  background-color: white;
+}
+
+header .logo {
+  font-family: 'Comfortaa', cursive;
+}
+
+header .form-select {
+  width: 70%;
+  color: #ffcc66;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  margin: auto;
+  margin-top: 0.625em;
+}
+
+header .temperature {
+  margin: auto;
+  margin-top: 0.625em;
+  text-align: center;
+  font-family: ' QanelasMedium';
+  font-size: 12px;
+  font-weight: bold;
+  word-spacing: 0.2em;
+}
+
+header .temperature span {
+  height: 18px;
+  font-size: 19px;
+}
+
+header .col-3 {
+  margin-top: 0.625em;
+}
+
+header button {
+  background-color: #ffcc00;
+  color: white;
+  border: none;
+  font-family: 'QanelasBold';
+  font-size: 14px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+header .dropdown {
+  font-family: 'QanelasMedium';
+  font-size: 11px;
+  margin-top: 0.625em;
+  font-weight: 400;
+}
+
+header .dropdown .btn-secondary {
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+header .dropdown .dropdown-toggle::after {
+  content: none;
+}
+
+.map {
+  margin-top: 10px;
+}
+
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 600px;
+  width: 100%;
+}
+
+.contacts {
+  height: 200px;
+  margin-top: 200px;
+  background-color: #f6f8f9;
+  margin-bottom: 100px;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+}
+
+.contacts .container {
+  margin: auto;
+}
+
+.contacts h3 {
+  font-family: 'QanelasBold';
+  font-size: 13px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer form {
+  background-color: #e6edf1;
+}
+
+footer form h2 {
+  text-align: center;
+}
+
+footer button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
